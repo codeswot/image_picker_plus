@@ -394,7 +394,9 @@ class _ImagesViewPageState extends State<ImagesViewPage>
               if (widget.callbackFunction != null) {
                 await widget.callbackFunction!(details);
               } else {
-                Navigator.of(context).maybePop(details);
+                if (context.mounted) {
+                  Navigator.of(context).maybePop(details);
+                }
               }
             }
           } else {
@@ -424,7 +426,9 @@ class _ImagesViewPageState extends State<ImagesViewPage>
             if (widget.callbackFunction != null) {
               await widget.callbackFunction!(details);
             } else {
-              Navigator.of(context).maybePop(details);
+              if (context.mounted) {
+                Navigator.of(context).maybePop(details);
+              }
             }
           }
         },

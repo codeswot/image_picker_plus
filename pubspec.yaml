@@ -4,18 +4,18 @@ version: 0.5.9
 homepage: https://github.com/AhmedAbdoElhawary/image_picker_plus.git
 
 environment:
-  sdk: '>=2.17.1 <4.0.0'
+  sdk: '>=3.2.6 <4.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  photo_manager: ^2.6.0
+  photo_manager: ^3.0.0
   shimmer: ^3.0.0
-  camera: ^0.10.5+2
-  image: ^4.0.17
-  video_player: ^2.7.0
-  image_picker: ^1.0.1
+  camera: 0.10.5+9
+  image: ^4.1.7
+  video_player: ^2.8.2
+  image_picker: ^1.0.7
 
 dev_dependencies:
   flutter_test:
